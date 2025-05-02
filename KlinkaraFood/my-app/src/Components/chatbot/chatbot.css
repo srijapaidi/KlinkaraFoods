@@ -1,0 +1,89 @@
+
+
+/* Chatbot Icon (Fixed to bottom-right) */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* WhatsApp green */
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .chatbot-icon:hover {
+    background-color: #128C7E; /* Darker green on hover */
+  }
+  
+  .chatbot-icon-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  /* Chatbot Container (Initially hidden, displayed when clicked) */
+  .chatbot-container {
+    width: 300px;
+    height: 200px;
+    background-color: #f8f8f8;
+    position: fixed;
+    bottom: 80px; /* Positioning the container above the icon */
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Animation for fading in the chatbot */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Header of the chatbot */
+  .chatbot-header {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Buttons inside the chatbot */
+  .chatbot-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chatbot-button {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .chatbot-button:hover {
+    background-color: #128C7E; /* Darker green on hover */
+  }
+  
+  /* Add any additional styles for the Home page button */
+  .home-page {
+    text-align: center;
+    margin-top: 50px;
+  }
+  

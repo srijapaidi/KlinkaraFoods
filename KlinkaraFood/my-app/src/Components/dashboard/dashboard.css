@@ -1,0 +1,21 @@
+/* Dashboard.css */
+.dashboard {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;         /* Ensures the image takes up the full width of the carousel */
+    height: 400px;       /* Fixed height for the image */
+    object-fit: cover;   /* Maintains aspect ratio while covering the container */
+    object-position: center;  /* Center the image if it's cropped */
+    width: 1080px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+
+  }
+  
+  
