@@ -46,7 +46,7 @@ function App() {
           <Route path="/profile" element={<LoginAndSignup />} />
           <Route path="/about" element={<About />} />
           
-
+srijaa
           
         </Routes>
 
