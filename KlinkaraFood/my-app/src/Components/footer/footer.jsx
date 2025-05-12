@@ -15,10 +15,9 @@ const Footer = () => {
           <ul>
             <li><a href="#pickles">Pickles</a></li>
             <li><a href="#podis">Podis</a></li>
-            <li><a href="#mixer">Mixer</a></li>
             <li><a href="#snacks">Snacks</a></li>
             <li><a href="#sweets">Sweets</a></li>
-            <li><a href="#masalas">Masalas</a></li>
+            
           </ul>
         </div>
 
@@ -30,8 +29,8 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Contact Us</h4>
           <ul>
-            <li><strong>Email:</strong> <a href="mailto:klinkarafoods@example.com">klinkarafoods@example.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+910123456789">+91 01234 56789</a></li>
+            <li><strong>Email:</strong> <a href="mailto:klinkarafoods@gmail.com">klinkarafoods@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+910123456789">+91 9014128624</a></li>
             <li><strong>Address:</strong> Sirpur (T), 504299</li>
           </ul>
         </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+
 import './dashboard.css'; // If you need to add custom styles
+import  pic from '../assets/OIP.jpg';
 
 
 
@@ -31,7 +33,7 @@ const Dashboard = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://t3.ftcdn.net/jpg/06/27/13/32/360_F_627133202_wLaztzJNb0aWbZYRDS8jUC3aDJ64HkhT.jpg"
+            src={pic}
             alt="Third slide"
           />
           

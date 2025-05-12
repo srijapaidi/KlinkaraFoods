@@ -1,11 +1,11 @@
 import React from 'react';
 import './sweets.css'; // Reuse same styling
 import Sweet1 from '../assets/laddu.jpg';
-import Sweet2 from '../assets/laddu.jpg';
-import Sweet3 from '../assets/laddu.jpg';
-import Sweet4 from '../assets/laddu.jpg';
-import Sweet5 from '../assets/laddu.jpg';
-import Sweet6 from '../assets/laddu.jpg';
+import Sweet2 from '../assets/Gavvale sweet.jpg';
+import Sweet3 from '../assets/Arshalu.jpg';
+import Sweet4 from '../assets/Karajjalu.jpg';
+import Sweet5 from '../assets/Shangapindi Laddu.jpg';
+import Sweet6 from '../assets/Rava Laddu.jpg';
 
 const sweets = [
   { id: 1, title: 'Laddu', description: 'Classic Festive Sweet', price: '₹299/500g', imageUrl: Sweet1 },
