@@ -1,89 +1,120 @@
 
-
 /* Chatbot Icon (Fixed to bottom-right) */
 .chatbot-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366; /* WhatsApp green */
-    border-radius: 50%;
-    padding: 15px;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* WhatsApp green */
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.chatbot-icon:hover {
+  background-color: #128C7E; /* Darker green on hover */
+}
+
+.chatbot-icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Chatbot Container - Card View */
+.chatbot-container {
+  width: 300px;
+  height: 300px; /* Increased height of the container */
+  background-color: #ffffff; /* White background for card-like view */
+  position: fixed;
+  bottom: 80px; /* Positioned above the chatbot icon */
+  right: 20px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft, subtle shadow */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: fadeIn 0.3s ease-out;
+  z-index: 999;
+}
+
+/* Fade-in animation for smooth appearance */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  .chatbot-icon:hover {
-    background-color: #128C7E; /* Darker green on hover */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .chatbot-icon-img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-  }
-  
-  /* Chatbot Container (Initially hidden, displayed when clicked) */
-  .chatbot-container {
-    width: 300px;
-    height: 200px;
-    background-color: #f8f8f8;
-    position: fixed;
-    bottom: 80px; /* Positioning the container above the icon */
-    right: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    animation: fadeIn 0.3s ease-out;
-  }
-  
-  /* Animation for fading in the chatbot */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Header of the chatbot */
-  .chatbot-header {
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  /* Buttons inside the chatbot */
-  .chatbot-body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .chatbot-button {
-    background-color: #25D366; /* WhatsApp green */
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .chatbot-button:hover {
-    background-color: #128C7E; /* Darker green on hover */
-  }
-  
-  /* Add any additional styles for the Home page button */
-  .home-page {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
+}
+
+/* Chatbot Header */
+.chatbot-header {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333; /* Darker text for readability */
+}
+
+/* Chatbot Body with Buttons */
+.chatbot-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Evenly distribute space */
+  height: 100%; /* Take up full container height */
+}
+
+/* Default button style */
+.chatbot-button {
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px; /* Rounded buttons */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  font-size: 14px;
+  height: 33%; /* Ensure equal height for each button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* WhatsApp Button */
+.chatbot-button:nth-child(2) {
+  background-color: #25D366;
+}
+.chatbot-button:nth-child(2):hover {
+  background-color: #128C7E;
+  transform: translateY(-3px); /* Button lift on hover */
+}
+
+/* Instagram Button */
+.chatbot-button:nth-child(1) {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.chatbot-button:nth-child(1):hover {
+  opacity: 0.9;
+  transform: translateY(-3px); /* Button lift on hover */
+}
+
+/* Home Button */
+.chatbot-button:nth-child(3) {
+  background-color: #4A90E2;
+}
+.chatbot-button:nth-child(3):hover {
+  background-color: #357ABD;
+  transform: translateY(-3px); /* Button lift on hover */
+}
+
+/* Optional Home Page Styling */
+.home-page {
+  text-align: center;
+  margin-top: 50px;
+}

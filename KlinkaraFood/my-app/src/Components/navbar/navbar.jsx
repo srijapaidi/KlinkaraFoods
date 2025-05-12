@@ -29,7 +29,7 @@ const Navbar = () => {
         {/* Navigation Links */}
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
-          <li><a href="#shop">Shop</a></li>
+          <li><Link to="/allproducts">All Products</Link></li>
 
           {/* Dropdown for Products */}
           <li
@@ -48,16 +48,18 @@ const Navbar = () => {
             <ul className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`}>
               <li><Link to="/pickles">Pickles</Link></li>
               <li><Link to="/podis">Podis</Link></li>
-              <li><a href="#fasting">Fasting/Snacks</a></li>
               <li><Link to="/snacks">Snacks</Link></li>
-              <li><a href="#sweets">Sweets</a></li>
+              <li><Link to="/sweets">Sweets</Link></li>
+               {/*
+              <li><a href="#fasting">Fasting/Snacks</a></li> 
               <li><a href="#masalas">Masalas</a></li>
               <li><a href="#Grains">Grains</a></li>
               <li><a href="#Vadiyalu">Vadiyalu</a></li>
+               */}
             </ul>
           </li>
 
-          <li><a href="#contact">Contact</a></li>
+         {/*  <li><a href="#contact">Contact</a></li> */}
           <li><a href="/about">About</a></li>
           <li><Link to="/profile">Profile</Link></li>
         </ul>

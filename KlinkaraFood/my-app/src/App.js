@@ -15,6 +15,8 @@ import Pickles from './Components/pickles/pickles.jsx';
 import Podis from './Components/podis/podis.jsx';
 import Snacks from './Components/snacks/snacks.jsx';
 import About from './Components/about/about.jsx';
+import Sweets from './Components/sweets/sweets.jsx';
+import AllProducts from './Components/allproducts/allproducts.jsx';
 
 //import Home from './Components/Home/home.jsx';
 
@@ -45,6 +47,8 @@ function App() {
           <Route path="/snacks" element={<Snacks />} />
           <Route path="/profile" element={<LoginAndSignup />} />
           <Route path="/about" element={<About />} />
+          <Route path="/sweets" element={<Sweets/>}/>
+          <Route path='/allproducts' element={<AllProducts/>} />
           
 
           
